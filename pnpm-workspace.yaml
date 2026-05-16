@@ -1,8 +1,8 @@
 allowBuilds:
- '@swc/core': true
- esbuild: set this to true or false
- sharp: true
- unrs-resolver: true
+  '@swc/core': true
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
 
 autoInstallPeers: true
 
@@ -11,8 +11,8 @@ dedupePeerDependents: true
 engineStrict: true
 
 onlyBuiltDependencies:
- - sharp
- - unrs-resolver
+  - sharp
+  - unrs-resolver
 
 packageImportMethod: hardlink
 
@@ -23,6 +23,6 @@ sideEffectsCache: true
 storeDir: ~/.pnpm-store
 
 updateConfig:
- ignoreDependencies:
-  - eslint
-  - '@eslint/js'
+  ignoreDependencies:
+    - eslint
+    - '@eslint/js'
