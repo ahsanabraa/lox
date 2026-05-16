@@ -1,0 +1,274 @@
+.main {
+	background-color: #f2f4f5;
+	min-height: 100vh;
+	padding-bottom: 100px;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.imageSection {
+	position: relative;
+	background-color: white;
+}
+
+.imageHeader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.iconBtn {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.imageActions {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.imageWrapper {
+	position: relative;
+	aspect-ratio: 1/1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.mainImage {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.imageCounter {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 0.25rem 0.75rem;
+	border-radius: 12px;
+	font-size: 0.75rem;
+}
+
+.infoSection {
+	padding: 1rem;
+}
+
+.priceRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.price {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--olx-dark);
+}
+
+.wishlistIcon {
+	color: var(--olx-dark);
+}
+
+.name {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--olx-text-muted);
+	margin-bottom: 1rem;
+}
+
+.metaRow {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.75rem;
+	color: var(--olx-text-muted);
+}
+
+.metaItem {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.divider {
+	height: 1px;
+	background-color: var(--olx-border);
+	margin: 1.5rem 0;
+}
+
+.detailsSection h3,
+.descriptionSection h3,
+.mapSection h3 {
+	font-size: 1rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+	color: var(--olx-dark);
+}
+
+.detailRow {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.label {
+	width: 100px;
+	font-size: 0.8rem;
+	color: var(--olx-text-muted);
+}
+
+.value {
+	font-size: 0.8rem;
+	color: var(--olx-dark);
+}
+
+.descriptionSection p {
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+	color: var(--olx-text-muted);
+}
+
+.seeMore {
+	color: #3a77ff;
+	font-size: 0.9rem;
+	font-weight: 700;
+	margin-top: 0.5rem;
+}
+
+.bookingBanner {
+	background-color: #23e5db;
+	margin: 1.5rem -1rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.bannerTitle {
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.bookingAman {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	font-size: 1.1rem;
+	font-weight: 900;
+}
+
+.bannerChevron {
+	transform: rotate(180deg);
+}
+
+.sellerSection {
+	border: 1px solid var(--olx-border);
+	border-radius: var(--radius-sm);
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.sellerHeader {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.sellerAvatar {
+	width: 48px;
+	height: 48px;
+	background-color: #eee;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sellerInfo h4 {
+	font-size: 1.1rem;
+	font-weight: 800;
+}
+
+.sellerChevron {
+	margin-left: auto;
+	transform: rotate(180deg);
+}
+
+.mapSection h3 {
+	margin-top: 2rem;
+}
+
+.mapPlaceholder {
+	height: 200px;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	border-radius: var(--radius-sm);
+	margin-bottom: 1rem;
+}
+
+.adIdRow {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.8rem;
+	font-weight: 800;
+	color: var(--olx-dark);
+}
+
+.adIdRow button {
+	color: #3a77ff;
+}
+
+.bottomButtons {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	background-color: white;
+	display: flex;
+	gap: 1rem;
+	border-top: 1px solid var(--olx-border);
+	z-index: 100;
+}
+
+.chatBtn,
+.bookingBtn {
+	flex: 1;
+	height: 48px;
+	border-radius: 4px;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.chatBtn {
+	border: 2px solid var(--olx-dark);
+	color: var(--olx-dark);
+}
+
+.bookingBtn {
+	background-color: var(--olx-dark);
+	color: white;
+}

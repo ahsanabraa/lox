@@ -1,0 +1,249 @@
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: var(--olx-bg);
+	border-bottom: 1px solid var(--olx-border);
+	padding: 0.5rem 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.topRow {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	height: 64px;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 900;
+	color: var(--olx-dark);
+	letter-spacing: -2px;
+	margin: 0;
+	flex-shrink: 0;
+}
+
+.desktopSearch {
+	flex: 1;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.mobileSearch {
+	display: none;
+	padding: 0.5rem 0;
+}
+
+.mobileSearchIcon {
+	margin-left: 1rem;
+	color: var(--olx-text-muted);
+}
+
+.locationInput {
+	background-color: white;
+	border: 2px solid var(--olx-dark);
+	border-radius: var(--radius-sm);
+	display: flex;
+	align-items: center;
+	padding: 0 0.75rem;
+	height: 48px;
+	width: 200px;
+	gap: 0.5rem;
+}
+
+.locationInput:focus-within,
+.searchInputWrapper:focus-within {
+	border-color: var(--olx-dark);
+}
+
+.locationInput input {
+	width: 100%;
+	font-weight: 600;
+	font-size: 0.95rem;
+	outline: none;
+}
+
+.searchInputWrapper {
+	flex: 1;
+	position: relative;
+	background-color: white;
+	border: 2px solid var(--olx-dark);
+	border-radius: var(--radius-sm);
+	display: flex;
+	align-items: center;
+	height: 48px;
+}
+
+.searchInputWrapper input {
+	flex: 1;
+	padding: 0 1rem;
+	font-size: 0.95rem;
+	outline: none;
+}
+
+.searchBtn {
+	background-color: var(--olx-dark);
+	height: 100%;
+	width: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 2px 2px 0;
+}
+
+.suggestions {
+	position: absolute;
+	top: 100%;
+	left: -2px;
+	right: -2px;
+	background-color: white;
+	border: 1px solid var(--olx-border);
+	border-top: none;
+	box-shadow: var(--shadow-md);
+	border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+	overflow: hidden;
+}
+
+.suggestionItem {
+	padding: 0.75rem 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	border-bottom: 1px solid #f2f4f5;
+}
+
+.suggestionItem:hover {
+	background-color: #f2f4f5;
+}
+
+.suggestIcon {
+	color: var(--olx-text-muted);
+}
+
+.suggestContent {
+	display: flex;
+	flex-direction: column;
+}
+
+.suggestName {
+	font-weight: 700;
+	font-size: 0.9rem;
+}
+
+.suggestCat {
+	font-size: 0.75rem;
+	color: var(--olx-text-muted);
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.iconButton {
+	color: var(--olx-dark);
+}
+
+.sellBtn {
+	background: white;
+	color: var(--olx-dark);
+	padding: 0.5rem 1.25rem;
+	border-radius: 24px;
+	font-weight: 800;
+	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+	position: relative;
+	border: 5px solid transparent;
+	background-clip: padding-box;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.1s;
+}
+
+.sellBtn::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	bottom: -5px;
+	left: -5px;
+	right: -5px;
+	z-index: -1;
+	border-radius: 24px;
+	background: linear-gradient(to right, #ffce32, #3a77ff, #23e5db);
+}
+
+.sellBtn:hover {
+	transform: scale(1.02);
+}
+
+.menuButton {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.locationInput {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.topRow {
+		height: 56px;
+		justify-content: space-between;
+		gap: 0;
+	}
+
+	.menuButton {
+		display: block;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+	}
+
+	.desktopSearch {
+		display: none;
+	}
+
+	.mobileSearch {
+		display: block;
+	}
+
+	.actions .iconButton {
+		display: none;
+	}
+
+	.sellBtn {
+		padding: 0.4rem 0.75rem;
+		font-size: 0.75rem;
+		border-width: 3px;
+	}
+
+	.sellBtn::before {
+		top: -3px;
+		bottom: -3px;
+		left: -3px;
+		right: -3px;
+	}
+
+	.mobileIcons {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		color: var(--olx-dark);
+	}
+}
+
+.mobileIcons {
+	display: none;
+}

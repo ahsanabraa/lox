@@ -1,0 +1,18 @@
+.installBtn {
+	background-color: var(--olx-dark);
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: var(--radius-sm);
+	font-weight: 800;
+	font-size: 0.9rem;
+	transition: all 0.2s;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	border: 2px solid var(--olx-dark);
+}
+
+.installBtn:hover {
+	background-color: white;
+	color: var(--olx-dark);
+}

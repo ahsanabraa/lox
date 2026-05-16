@@ -1,0 +1,24 @@
+'use client'
+
+import { useEffect } from 'react'
+
+export default function GlobalError({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+	useEffect(() => {
+		console.error(error)
+	}, [error])
+
+	return (
+		<html>
+			<body>
+				<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+					<button
+						type="button"
+						className="btn-blue"
+						onClick={() => reset()}>
+						Try again
+					</button>
+				</div>
+			</body>
+		</html>
+	)
+}
