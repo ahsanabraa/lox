@@ -479,5 +479,33 @@
 		"location": "Medan Baru, Medan",
 		"date": "1 month ago",
 		"seller": "Putri Marketplace"
+	},
+	{
+		"id": "38",
+		"name": "Baju FLEUR PEACE Limited Edition",
+		"price": 200000,
+		"category": "Fashion",
+		"image": "/images/bariq.jpeg",
+		"discount": 0,
+		"rating": 5.0,
+		"promo": true,
+		"description": "Beli baju bonus pasir",
+		"location": "Jakarta Selatan",
+		"date": "Just now",
+		"seller": "Bariq Shop"
+	},
+	{
+		"id": "39",
+		"name": "Biawak Hias Khas Jepara",
+		"price": 250000,
+		"category": "Hobi",
+		"image": "/images/sipop.jpeg",
+		"discount": 0,
+		"rating": 4.5,
+		"promo": false,
+		"description": "Menggunakan pakan Siomay Mawar Gondrong Jaktim",
+		"location": "Jepara",
+		"date": "Just now",
+		"seller": "Sipop Reptiles"
 	}
 ]

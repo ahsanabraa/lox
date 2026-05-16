@@ -42,7 +42,12 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-	themeColor: '#0066FF'
+	themeColor: '#0066FF',
+	width: 'device-width',
+	initialScale: 1,
+	maximumScale: 1,
+	userScalable: false,
+	viewportFit: 'cover'
 }
 
 const RootLayout: FC<PropsExtendChildren> = ({ children }) => {

@@ -13,6 +13,7 @@ export interface Product {
 	discount: number
 	rating: number
 	promo?: boolean
+	description?: string
 	location: string
 	date: string
 	seller: string

@@ -11,7 +11,7 @@ async function HomeContent({ searchParams }: { searchParams: Promise<{ q?: strin
 	return (
 		<main>
 			<Header />
-			<div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+			<div style={{ maxWidth: '1200px', margin: '0 auto', overflow: 'hidden' }}>
 				{!query && <Hero />}
 				{!query && <CategorySection />}
 				<ProductGrid search={query} />

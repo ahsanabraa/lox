@@ -104,8 +104,14 @@ export default function ProductPage() {
 
 					<div className={styles.descriptionSection}>
 						<h3>Description</h3>
-						<p>Ready Stock {product.name}. Kondisi sangat baik.</p>
-						<p>Bisa Cash Dan Kredit...</p>
+						{product.description ? (
+							<p>{product.description}</p>
+						) : (
+							<>
+								<p>Ready Stock {product.name}. Kondisi sangat baik.</p>
+								<p>Bisa Cash Dan Kredit...</p>
+							</>
+						)}
 						<button
 							type="button"
 							className={styles.seeMore}>
